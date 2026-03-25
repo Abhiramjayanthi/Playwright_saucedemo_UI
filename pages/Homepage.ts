@@ -37,7 +37,6 @@ export class Homepage {
     }
 
     */
-
     async addToCart(ProductName : string){
         await this.page.locator('.inventory_item').filter({hasText:ProductName}).locator('button').click();
     }
