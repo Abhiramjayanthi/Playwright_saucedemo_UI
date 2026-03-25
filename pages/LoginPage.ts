@@ -13,9 +13,9 @@ export class LoginPage{
     async openWebsite(){
         await this.page.goto('https://www.saucedemo.com/');
     }
-    async login(){
-        await this.username.fill('standard_user');
-        await this.password.fill('secret_sauce');
+    async login(UserNAME : string,Password :string){
+        await this.username.fill(UserNAME);
+        await this.password.fill(Password);
         await this.loginButton.click();
     }
 }
