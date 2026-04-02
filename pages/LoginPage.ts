@@ -1,4 +1,7 @@
 import{Page,Locator,expect} from '@playwright/test';
+import dotenv from 'dotenv';
+dotenv.config();
+export default {};
 export class LoginPage{
     private page:Page;
     private username:Locator;
